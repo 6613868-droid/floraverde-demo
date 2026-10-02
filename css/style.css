@@ -809,12 +809,16 @@ body.modal-open { overflow: hidden; }
     pointer-events: auto;
     display: flex;
     gap: 18px;
+    width: 100%;
     overflow-x: auto;
     padding: 0 4vw 40px;
     scrollbar-width: none;
+    scroll-snap-type: x proximity;
+    scroll-padding-left: 4vw;
+    -webkit-overflow-scrolling: touch;
   }
   .hero__cards::-webkit-scrollbar { display: none; }
-  .hero-card { position: static; flex: none; animation: none; }
+  .hero-card { position: static; flex: none; animation: none; scroll-snap-align: start; }
   .hero-card--dog, .hero-card--cat, .hero-card--map { width: 218px; }
   .hero { align-items: flex-start; flex-direction: column; }
   .hero__content { padding: 150px 0 44px; }
@@ -854,7 +858,7 @@ body.modal-open { overflow: hidden; }
   .nav.open { opacity: 1; pointer-events: auto; }
   .nav > a:not(.nav__phone) { font-size: 17px; }
 
-  .burger { display: inline-flex; }
+  .burger { display: inline-flex; margin-left: auto; margin-right: -6px; }
 
   .section { padding: 80px 0; }
   .section-title { letter-spacing: 0.28em; text-indent: 0.28em; }
