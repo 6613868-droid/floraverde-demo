@@ -1,5 +1,5 @@
 /* ============================================================
-   Лапка — грумминг-студия
+   Красавчик — студия груминга
    Тёплая кремово-бежевая палитра, стеклянные карточки
    ============================================================ */
 
@@ -202,11 +202,12 @@ section { scroll-margin-top: 90px; }
   inset: 0;
   background:
     linear-gradient(100deg,
-      rgba(250, 243, 232, 0.94) 0%,
-      rgba(250, 243, 232, 0.72) 30%,
-      rgba(250, 243, 232, 0.18) 58%,
-      rgba(250, 243, 232, 0) 75%),
-    linear-gradient(to top, rgba(250, 243, 232, 0.9) 0%, rgba(250, 243, 232, 0) 22%);
+      rgba(250, 243, 232, 0.97) 0%,
+      rgba(250, 243, 232, 0.9) 32%,
+      rgba(250, 243, 232, 0.45) 56%,
+      rgba(250, 243, 232, 0.05) 78%),
+    linear-gradient(to top, rgba(250, 243, 232, 0.95) 0%, rgba(250, 243, 232, 0) 26%),
+    linear-gradient(to bottom, rgba(250, 243, 232, 0.55) 0%, rgba(250, 243, 232, 0) 18%);
 }
 
 .hero__inner { position: relative; z-index: 2; }
@@ -246,6 +247,14 @@ section { scroll-margin-top: 90px; }
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--ink-soft);
+}
+
+/* мягкий светлый ореол — текст поверх фото читается увереннее */
+.hero h1,
+.hero__text,
+.hero__note,
+.hero .eyebrow {
+  text-shadow: 0 1px 2px rgba(250, 243, 232, 0.65), 0 0 28px rgba(250, 243, 232, 0.5);
 }
 
 /* Плавающие карточки */
